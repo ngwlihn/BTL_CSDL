@@ -14,7 +14,6 @@
     $pass= $_POST['pass'];
     $name = $_POST['name'];
     $sm="SELECT user FROM user WHERE user='$user'";
-    print_r ($sm);
     $check= $conn->query($sm);
     if ($check->num_rows>0){
         echo "Tên đăng nhập đã tồn tại vui lòng đăng kí lại.";
